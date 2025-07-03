@@ -18,7 +18,7 @@ namespace IterationStatements
         
         // 2. Write a method that prints every third number from 3 to 999 to the console.
         //    - Method Signature: void PrintEveryThirdNumber()
-        public static void upbyThrees()
+        public static void UpByThrees()
         {
             for(int i = 3; i <= 999; i +=3)
             {
@@ -112,12 +112,12 @@ namespace IterationStatements
         public static void TenRange()
         {
             Console.WriteLine("Please give me a number");
-            var CanParse = int.TryParse(Console.ReadLine(), out int userNumber);
+            var canParse = int.TryParse(Console.ReadLine(), out int userNumber);
 
-            while (!CanParse)
+            while (!canParse)
             {
                 Console.WriteLine("please enter a valid number");
-                CanParse = int.TryParse(Console.ReadLine(), out userNumber);
+                canParse = int.TryParse(Console.ReadLine(), out userNumber);
             }
 
             if (userNumber <= 10 && userNumber > -10) 
@@ -137,11 +137,11 @@ namespace IterationStatements
         // 2. Write a method that displays the multiplication table (from 1 to 12) for a given integer.
         //    - Method Signature: void DisplayMultiplicationTable(int number)
         //    - Should print each line in the format: "1 * number = result"
-        public static void MultiplyThroughtwelve(int number)
+        public static void MultiplyThroughTwelve(int number)
         {
             for(int i = 1; i <= 12; i++)
             {
-                Console.WriteLine($"{i} x {number} = ({i * number}");
+                Console.WriteLine($"{i} x {number} = {i * number}");
             }
         }
 
@@ -149,14 +149,14 @@ namespace IterationStatements
         // Use various test cases to ensure they work as expected.        
         static void Main(string[] args)
         {
-           // printNumbers1000();
-           //upbyThrees();
-           // TwoNumbersSame(1, 3);
+           // PrintNumbers1000();
+           //UpByThrees();
+           //TwoNumbersSame(1, 3);
            //EvenOrOdd(7);
-           //IsPositive(0);
+           //IsPositive(2);
            //CanVote();
           // TenRange();
-           MultiplyThroughtwelve(10);  
+          // MultiplyThroughTwelve(10);  
 
         }
     }
