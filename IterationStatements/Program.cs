@@ -8,7 +8,7 @@ namespace IterationStatements
         // LukeWarm Section: Implement the following methods        
         // 1. Write a method that prints all numbers from 1000 down to -1000 to the console.
         //    - Method Signature: void PrintNumbers()
-        public static void printNumbers1000()
+        public static void PrintNumbers1000()   
         {
             for(int i = 1000; i >= -1000; i--)
             {
